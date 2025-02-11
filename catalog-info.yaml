@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name:  "bttestnodeapp4"
+  description: test node app demo
+  tags:
+    - github
+    - aks
+    - nodejs
+  links:
+    - url: http://20.241.159.207/d/prom-k8s-monitoring/lattice-monitoring
+      title: Grafana Dashboard
+  annotations:
+    github.com/project-slug: azarus-code/bttestnodeapp4
+    github.com/workflow-ref: .github/workflows/deploy.yaml@main
+    backstage.io/managed-by-location: url:https://github.com/azarus-code/bttestnodeapp4
+    backstage.io/managed-by-origin-location: url:https://github.com/azarus-code/bttestnodeapp4
+    backstage.io/kubernetes-id: "bttestnodeapp4"
+    backstage.io/kubernetes-cluster: "bsidp-cluster"
+    backstage.io/kubernetes-namespace: 'default'
+    # backstage.io/techdocs-ref: dir:.
+    #backstage.io/techdocs-ref: url:http://<your-service-endpoint>
+spec:
+  type: service
+  owner: "azarus-code"
+  lifecycle: production
