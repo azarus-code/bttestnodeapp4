@@ -20,7 +20,8 @@ metadata:
     backstage.io/kubernetes-namespace: 'default'
     sonarqube.org/project-key: lattice-idp
     dev.azure.com/project-repo: lattice/lattice
-    dev.azure.com/project: lattice/lattice
+    dev.azure.com/project: lattice
+    backstage.io/azure-devops-repository: lattice
     # backstage.io/techdocs-ref: dir:.
     #backstage.io/techdocs-ref: url:http://<your-service-endpoint>
 spec:
